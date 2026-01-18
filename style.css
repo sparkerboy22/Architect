@@ -1,7 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -187,13 +191,16 @@ section p{
           filter: grayscale(100%);
 }
 .main-footer{
-    border: 1px solid  rgba(255, 143, 14, 0.212) ;
+   
+    border: 1px solid rgba(255, 143, 14, 0.212);
     border-radius: 8px;
     background-color: rgba(255, 143, 14, 0.212);
-    margin-top: 130px;
+    /* margin-top: 130px;
     margin-bottom: 230px;
     margin-left: 240px;
-    margin-right: 240px;
+    margin-right: 240px; */
+    margin: 130px 240px;
+    
 }
 .copyright{
     font-size: 1.25rem;
@@ -219,6 +226,10 @@ section p{
         margin-top: 20px;
         margin-left: 20px;
     }
+    .main-footer{
+        margin: 50px 20px;
+    }
+   
 }
 @media screen and (min-width:576px) and  (max-width:992px){
     .teams ,.features{
@@ -228,6 +239,13 @@ section p{
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
         gap: 50px;
+    }
+       #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+       .main-footer{
+        margin: 50px 20px;
     }
     
 }
